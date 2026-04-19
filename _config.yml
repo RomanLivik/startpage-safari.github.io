@@ -1,0 +1,11 @@
+title: Start Page
+description: Minimalist Start Page for Browser
+baseurl: ""
+url: ""
+
+markdown: kramdown
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
