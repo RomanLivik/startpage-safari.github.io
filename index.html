@@ -18,7 +18,7 @@ title: Start
         type="text"
         autocomplete="off"
         spellcheck="false"
-        placeholder="поиск или адрес..."
+        placeholder="..." 
       />
       <button id="search-btn">→</button>
     </div>
@@ -28,8 +28,8 @@ title: Start
 
   <div id="tabs-section">
     <div id="tabs-label">
-      <span>закреплено</span>
-      <button id="add-tab-btn" title="Добавить вкладку">+</button>
+      <span id="text-pinned">закреплено</span>
+      <button id="add-tab-btn" title="+">+</button>
     </div>
     <div id="tabs-grid"></div>
   </div>
@@ -37,13 +37,13 @@ title: Start
 
 <div id="modal-overlay">
   <div id="modal">
-    <h3>Новая вкладка</h3>
+    <h3 id="text-new-tab">Новая вкладка</h3>
     <div class="modal-field">
-      <label>Название</label>
+      <label id="text-name">Название</label>
       <input id="modal-name" type="text" placeholder="GitHub" />
     </div>
     <div class="modal-field">
-      <label>URL</label>
+      <label id="text-url">URL</label>
       <input id="modal-url" type="text" placeholder="https://github.com" />
     </div>
     <div id="modal-actions">

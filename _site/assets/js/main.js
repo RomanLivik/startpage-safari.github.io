@@ -359,3 +359,48 @@ document.addEventListener("keydown", (e) => {
     searchInput.focus();
   }
 });
+
+// Localization 
+const translations = {
+  ru: {
+    searchPlaceholder: "поиск или адрес...",
+    pinned: "закреплено",
+    newTab: "Новая вкладка",
+    name: "Название",
+    url: "URL",
+    cancel: "Отмена",
+    add: "Добавить",
+    addTitle: "Добавить вкладку",
+    engineTitle: "Сменить поисковик"
+  },
+  en: {
+    searchPlaceholder: "search or type URL...",
+    pinned: "pinned",
+    newTab: "New Tab",
+    name: "Name",
+    url: "URL",
+    cancel: "Cancel",
+    add: "Add",
+    addTitle: "Add tab",
+    engineTitle: "Change search engine"
+  }
+};
+
+function applyLanguage() {
+  const userLang = navigator.language.substring(0, 2);
+  const lang = translations[userLang] ? userLang : 'en'; 
+  const t = translations[lang];
+
+  document.getElementById("search-input").placeholder = t.searchPlaceholder;
+  document.getElementById("text-pinned").textContent = t.pinned;
+  document.getElementById("text-new-tab").textContent = t.newTab;
+  document.getElementById("text-name").textContent = t.name;
+  document.getElementById("text-url").textContent = t.url;
+  document.getElementById("modal-cancel").textContent = t.cancel;
+  document.getElementById("modal-save").textContent = t.add;
+  
+  document.getElementById("add-tab-btn").title = t.addTitle;
+  document.getElementById("engine-btn").title = t.engineTitle;
+}
+
+applyLanguage();
