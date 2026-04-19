@@ -1,6 +1,6 @@
 title: Start Page
 description: Minimalist Start Page for Browser
-baseurl: ""
+baseurl: "/startpage-safari.github.io"
 url: ""
 
 markdown: kramdown
