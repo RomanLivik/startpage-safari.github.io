@@ -10,5 +10,5 @@ My start page for safari in Black&White style
 ## Installation
 You should copy url below and paste it in Settings > General > Home page
 ```
-https://romanlivik.github.io/startpage-safari.github.io/
+https://gadzhievaleksandr.github.io/startpage-safari.github.io/
 ```
