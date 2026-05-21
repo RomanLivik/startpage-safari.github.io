@@ -1,6 +1,7 @@
 # Start page theme for safari
 My start page for safari in Black&White style
 
+> [!IMPORTANT]
 > This project will continue to be finalized and some elements may change their position, but the style will remain exactly the same as it is now
 
 ## Screenshots
